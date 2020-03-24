@@ -5,4 +5,4 @@ try:
 except BaseException as e:
     print(e)
 finally:
-    f.close()
+    f.close()           # 关闭文件之前会自动调用flush()将缓冲区的内容写入文件中。
